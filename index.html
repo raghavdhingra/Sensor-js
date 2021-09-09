@@ -16,12 +16,16 @@
       // });
       // gyroscope.start();
 
-      let acl = new Accelerometer({ frequency: 1 });
-      acl.addEventListener("reading", () => {
-        console.log(acl);
-      });
+      // let acl = new Accelerometer({ frequency: 1 });
+      // acl.addEventListener("reading", () => {
+      //   console.log(acl);
+      // });
 
-      acl.start();
+      // acl.start();
+
+      window.addEventListener("deviceorientation", (e) => {
+        console.log(e.alpha, e.beta, e.gamma);
+      });
     </script>
   </body>
 </html>
